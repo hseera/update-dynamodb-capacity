@@ -21,7 +21,7 @@ else:
           BillingMode = awstables_desc.get("Table", {}).get("BillingModeSummary", {}).get("BillingMode")
           if BillingMode=='PAY_PER_REQUEST':
               print(item, "table already set to On Demand Capacity\n")
-              print(awstables_desc)
+              #print(awstables_desc)
           else:
               status = dynamodb.update_table(TableName=item,BillingMode='PAY_PER_REQUEST')
               print ("Updating",item,"to On Demand Capacity. Billing Status changed to ", status['TableDescription']['BillingModeSummary']['BillingMode'],"\n")
