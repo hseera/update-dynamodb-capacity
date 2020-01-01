@@ -1,4 +1,4 @@
-# dynamodb-billing-mode
+# update-dynamodb-capacity
 Change DynamoDB capacity from Provisioned to On Demand.
 
 ## Getting Started
