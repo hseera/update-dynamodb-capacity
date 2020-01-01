@@ -1,5 +1,7 @@
 # update dynamodb capacity
-Change DynamoDB capacity from Provisioned to On Demand.
+There might be cases in non-prod environment where you have lots of DynamoDB tables and each one either set to Provisioned or On-Demand capacity. If not properly managed, cost ($$) of keeping tables on Provisionsed capacity can escalate pretty quickly. 
+This simple python script goes through all the tables and if they are running with provisioned capacity changes them to On-demand. If they are alread on On-Demand capacity, it doesn't nothing to those tables.
+ 
 
 ## Getting Started
 
@@ -20,12 +22,13 @@ What things you need to execute the script
 ### Execution
 
 ```
-1: Once above prequisites are setup, execute the python script
+Once above prequisites are setup, execute the python script
 ```
 
 ## Improvements
 
 * Check when was the table last changed to On-Demand capacity. If it was less than 24 hours than reduce the Provisioned capacity else change it to On-Demand.
+* Improve on the get() function call. In future if AWS changes the json structure, this call if fail. Need to come up with a better approach. 
 ## Authors
 
 * **Harinder Seera** - *Initial work* - [OzPerf](https://ozperf.com/)
