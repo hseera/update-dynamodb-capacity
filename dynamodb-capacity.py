@@ -5,8 +5,6 @@ Created on Wed Jan  1 17:24:42 2020
 @author: harinder
 """
 
-# -*- coding: utf-8 -*-
-
 import boto3.dynamodb
 import boto3.dynamodb.conditions
 import logging
