@@ -1,7 +1,5 @@
 # update dynamodb capacity
-There might be cases in non-prod environment where you have lots of DynamoDB tables and each one either set to Provisioned or On-Demand capacity. If not properly managed, cost ($$) of keeping tables on Provisionsed capacity can escalate pretty quickly. 
-This simple python script goes through all the tables and if they are running with provisioned capacity changes them to On-demand. If they are alread on On-Demand capacity, it doesn't nothing to those tables.
- 
+There might be cases when you end up having a lot of DynamoDB tables in your  non-prod environment and they might be either set to Provisioned or On-Demand capacity. If they are not properly managed, cost ($$) of keeping these tables on Provisioned capacity can escalate pretty quickly. This simple python script goes through all the tables and if they are on provisioned capacity changes them to On-demand. If they are already on On-Demand capacity, it doesn't nothing. 
 
 ## Getting Started
 
