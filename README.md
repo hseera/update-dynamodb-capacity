@@ -31,6 +31,8 @@ Once above prequisites are setup, execute the python script
 
 * **Harinder Seera** - *Initial work* - [OzPerf](https://ozperf.com/)
 
+If you would like to contribute to this project, please reachout to me.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
