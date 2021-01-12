@@ -31,7 +31,7 @@ Once above prequisites are setup, execute the python script
 * Improve on the get() function call. In future if AWS changes the json structure, this call if fail. Need to come up with a better approach. 
 ## Authors
 
-* **Harinder Seera** - *Initial work* - [OzPerf](https://ozperf.com/)
+* **Harinder Seera** - *Initial work*
 
 If you would like to contribute to this project, please reachout to me.
 
